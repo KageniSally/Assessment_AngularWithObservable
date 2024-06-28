@@ -1,0 +1,25 @@
+<div class="posts">
+
+
+    <div class="each-post" *ngFor="let post of allPosts">
+        <div class="image">
+            <img src="{{image}}" alt="">
+            <div class="details">
+                <h2>Sally Gitonga</h2><i class='bx bxl-twitter'></i>
+            </div>
+
+        </div>
+        <div class="post">
+            <p>{{post.body}}</p>
+        </div>
+        <div class="reactions">
+            <div class="likes">
+                <i class='bx bxs-like'></i>
+                <p>200</p>
+            </div>
+            <div class="comments"><i class='bx bxs-message-dots'></i>
+                <p>200</p>
+            </div>
+        </div>
+    </div>
+</div>

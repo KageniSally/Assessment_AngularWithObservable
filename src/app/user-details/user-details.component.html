@@ -1,0 +1,45 @@
+<div class="user">
+    <div class="personal-info">
+        <div class="personal-left">
+            <img src="{{image}}" alt="">
+            <h1>{{userShowed.name}}</h1>
+            <p>{{userShowed.username}}</p>
+        </div>
+        <div class="personal-right">
+            <div class="search-user">
+                <p>Search</p>
+                <select name="" id="" (change)="getUser($event)">
+                    <option selected value="" *ngFor="let user of allUsers" value="{{user.id}}" >{{user.name}}</option>
+                </select>
+            </div>
+            <div> <i class='bx bxs-envelope'></i>
+                <i class='bx bxs-notification'></i>
+            </div>
+
+        </div>
+        <p></p>
+    </div>
+    <div class="more-info">
+        <div class="course">
+            <i class='bx bxs-briefcase-alt-2'></i>
+            <p>Science and Tech</p>
+        </div>
+        <div class="location"><i class='bx bxs-map-pin'></i>
+            <p>{{userShowed.address.street}}</p>
+        </div>
+        <div class="date-joined"><i class='bx bxs-calendar'></i>
+            <p>Joined in 2020</p>
+        </div>
+
+    </div>
+    <div class="followers-following">
+        <div class="following">
+            <h4>322</h4>
+            <p>following</p>
+        </div>
+        <div class="followers">
+            <h4>110.8K</h4>
+            <p>Followers</p>
+        </div>
+    </div>
+</div>

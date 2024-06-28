@@ -1,0 +1,67 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+    padding: 30px;
+
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100px;
+    height: 150px;
+
+}
+
+.details h2 {
+    font-size: 18px;
+    color: #000000;
+}
+
+.details i {
+    color: blue;
+}
+
+.reactions {
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+}
+
+.likes {
+    display: flex;
+    gap: 10px;
+}
+
+.comments {
+    display: flex;
+    gap: 10px;
+}
+
+.reply {
+    display: flex;
+    gap: 10px;
+}
+
+.reactions i {
+    height: 18px;
+    width: 18px;
+    color: #000000;
+}
+
+.each-post {
+    display: flex;
+    padding: 20px;
+    box-shadow: inset 0 0 0 2000px rgba(36, 32, 32, 0.075);
+    border-radius: 10px;
+
+}
+
+.details-post {
+    padding-left: 10px;
+}
